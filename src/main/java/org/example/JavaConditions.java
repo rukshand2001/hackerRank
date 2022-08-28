@@ -29,17 +29,20 @@ public class JavaConditions {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter number: ");
-        int enterNumber = scanner.nextInt();
+        System.out.print("Enter a number: ");
+        int enteredNumber = scanner.nextInt();
 
-        if(enterNumber%2 == 1 ){
+        if(enteredNumber%2 == 1 ){
             System.out.println("Weird");
-        } else if (enterNumber >= 2 && 5>= enterNumber){
+        } else if (enteredNumber >= 2 && 5>= enteredNumber){
             System.out.println("Not Weird");
-        }else if(enterNumber>=6 && enterNumber<=20){
+        }else if(enteredNumber>=6 && enteredNumber<=20){
             System.out.println("Weird");
-        } else if (enterNumber>20) {
+        } else if (enteredNumber>20) {
             System.out.println("Not Weird");
         }
+
+    scanner.close();
     }
+
 }
